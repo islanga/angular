@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Components</title>
+	</head>
+	<body>
+		<my-app>Loading Component</my-app>
+		<script src="angular.min.js"></script>
+		<script>
+		import { component } from '@angular/core';
+		@Component({
+			selector: 'my-app',
+			template: '<h1>Atlas {{name}}</h1>'
+		})
+		export class AppComponent { name: 'Angular'; }
+		</script>
+	</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>My First Angular Application</title>
+		<script src="angular.min.js"></script>
+	</head>
+	<body ng-app="myapp">
+		<div ng-controller="HelloController">
+			<h2>Welcome {{helloTo.title}} to the world of {{helloTo.name}}</h2>
+		</div>
+		<script>
+			angular.module("myapp", [])
+			.controller("HelloController", function($scope) {
+				$scope.helloTo = {};
+				$scope.helloTo.title = "AngularJS";
+				$scope.helloTo.name  = "Tutorialspoint!";
+			});
+		</script>
+	</body>
+</html>

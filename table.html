@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Table</title>
+		<style>
+		table, th, td {
+			border: 1px solid grey;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+		table tr:nth-child(odd) {
+			background-color: #f2f2f2;
+		}
+		table tr:nth-child(even) {
+			background-color: #ffffff;
+		}
+		</style>
+	</head>
+	<body ng-app="myApp">
+		<table border="0" ng-controller="myController">
+			<tr>
+				<th>Name</th>
+				<th>Level</th>
+			</tr>
+			<tr ng-repeat="x in langauges | orderBy:'level'">
+				<td>{{ x.name }}</td>
+				<td>{{ x.level }}</td>
+			</tr>
+		</table>
+		<script src="angular.min.js"></script>
+		<script>
+		angular.module("myApp", []).controller("myController", function($scope) {
+			$scope.langauges = [
+				{
+					name:'PHP',
+					level:'Advance'
+				},
+				{
+					name:'Java',
+					level:'Beginner'
+				},
+				{
+					name:'Python',
+					level:'Intermediate'
+				},
+				{
+					name:'C#',
+					level:'Advance'
+				}
+			];
+		});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,17 @@
+[
+	{
+		"Name" : "Innocent Langa",
+		"RollNo" : 101,
+		"Percentage" : "80%"
+	},
+	{
+		"Name" : "Samkelisiwe Gwala",
+		"RollNo" : 201,
+		"Percentage" : "70%"
+	},
+	{
+		"Name" : "Simo Zaca",
+		"RollNo" : 111,
+		"Percentage" : "77%"
+	}
+]
